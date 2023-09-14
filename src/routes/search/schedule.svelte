@@ -2,7 +2,7 @@
     import { _ } from 'svelte-i18n';
     import { Tab, TabList, TabPanel, Tabs } from './Components/Tabs/tabs.js';
     import SponsorTable from "./sponsortable.svelte";
-    import Top from "./Top.svelte"
+    // import Top from "./Top.svelte"
     import Day1 from "./Day1.svelte"
     import Day2 from "./Day2.svelte"
     import Day3 from "./Day3.svelte"
@@ -11,18 +11,18 @@
 <div class="tabsystem">
 <Tabs>
     <TabList>
-        <Tab>{$_("General Information")}</Tab>
+        <!-- <Tab>{$_("General Information")}</Tab> -->
         <Tab>{$_("day1")}</Tab>
         <Tab>{$_("day2")}</Tab>
         <Tab>{$_("day3")}</Tab>
         <Tab>{$_("Supporters")}</Tab>
     </TabList>
 
-    <TabPanel>
+    <!-- <TabPanel>
         <div class="container">
             <Top on:search />
         </div>
-    </TabPanel>
+    </TabPanel> -->
 
     <TabPanel>
         <div class="container">

@@ -1,13 +1,13 @@
 <script>
     import { _ } from 'svelte-i18n';
-    import Announcements from "./Announcements.svelte";
-    import Information from "./information.svelte";
+    // import Announcements from "./Announcements.svelte";
+    import Information from "../cjscc73/information.svelte";
 </script>
 
-<div class="panel">
+<!-- <div class="panel">
     <h1 class="post-title">{$_("Announcements")}</h1>
     <Announcements />
-</div>
+</div> -->
 <div class="panel">
     <h1 class="post-title">{$_("Overall schedule")}</h1>
     <Information />

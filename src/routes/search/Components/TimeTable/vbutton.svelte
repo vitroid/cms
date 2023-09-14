@@ -62,5 +62,6 @@
         margin: 3px; 
         
         box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.2);
+        border-radius: 2px;
     }
 </style>

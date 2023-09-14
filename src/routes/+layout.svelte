@@ -1,6 +1,7 @@
 <script>
-	import Banner from './Banner.svelte';
-	// import './styles.css';
+	import Header from './Header.svelte';
+	import Menu from './Menu.svelte';
+	import './global.css';
 	// import AfterLogin from './seat/Components/AfterLogin.svelte';
 	// import { store } from './hooks/auth';
 	import LoginComponent from '../lib/login/LoginComponent.svelte';
@@ -9,17 +10,13 @@
 
 <body>
 	<div class="wrap">
-		<Banner />
+		<Header />
 		{#if $token != "" }
+		<Menu />
 		<div class="app">
-
 			<main>
 				<slot />
 			</main>
-
-			<footer>
-				<!-- <p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p> -->
-			</footer>
 		</div>
 		{:else }
 			<LoginComponent />
